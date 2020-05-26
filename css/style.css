@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+
 body {
     background: #fff;
     position: relative;
@@ -24,8 +28,12 @@ body {
     margin-left: 14px;
 }
 
+.row {
+    display: grid;
+}
+
 .heading {
-    font-size: 1.2em;
+    /* font-size: 1.2em; */
     letter-spacing: 0.03em;
     margin-left: 0.7em;
     padding: 0.35em;
@@ -38,7 +46,7 @@ body {
 
 .box {
     width: auto;
-    height: 100%;
+    height: auto;
     background: #444;
     position: relative;
     overflow: hidden;
@@ -173,4 +181,17 @@ p.text {
     margin-top: 0.938em;
     letter-spacing: 0.0625em;
     text-align: center;
+}
+
+@media only screen and (min-width:688px) {
+    .row {
+        display: flex;
+    }
+
+}
+
+@media only screen and (min-width:884px) {
+    .row {
+        display: flex;
+    }
 }
