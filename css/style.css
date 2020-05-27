@@ -15,7 +15,6 @@ body {
 }
 
 .container {
-    width: 80%;
     padding-right: 0.5em;
     padding-left: 0.5em;
     margin-right: auto;
@@ -48,6 +47,28 @@ body {
     color: #ff5722;
 }
 
+
+/* style specifies the padding and margins of unordered list in nav || fetch ul which is under navigation bar (nav tag)*/
+nav ul{
+    padding: 0;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+nav li {
+    background-color: #666;
+    border-radius: 2em;
+    margin: 0.3em;
+    padding: 0.4em;
+    list-style-type: none;
+}
+
+/* style for the anchor tag */
+nav li a{
+    color: #ff5722;
+    text-decoration: none;
+}
+
 .box {
     width: auto;
     height: auto;
@@ -68,7 +89,7 @@ body {
 
 .box:after ,.box:before {
     position: absolute;
-    background: #00bcd1;
+    background: #ff5722;
     width: 3.5em;
     height: 4.5em;
     border-radius: 50%;
@@ -90,15 +111,6 @@ body {
     transform: scale(8);
     transition-delay: 0.15s;
 }
-
-.bg-color1:after , .bg-color1:before{
-    background: #03a9f4;
-}
-
-.bg-color2:after , .bg-color2:before{
-    background: #ff5722;
-}
-
 
 .box .icon , .box .icon li {
     display: inline-block;
@@ -188,7 +200,7 @@ p.text {
 }
 
 footer {
-    background-color: #ffffff;
+    background-color: transparent;
     font-size: .7em;
     text-align: center;
     margin-top: 2em;
@@ -209,6 +221,17 @@ footer a {
         display: contents;
     }
 
+    nav li {
+        display: inline;
+        width: 18%;
+        margin-left: 1%;
+        margin-right: 1%;
+        padding-left: 0;
+        padding-right: 0;
+        white-space: nowrap;
+        border-radius: 0;
+        background-color: transparent;
+    }
     .box {
         margin: 0.5em;
     }
@@ -239,7 +262,6 @@ footer a {
         text-decoration: none;
         color: #fafafa;
     }
-
 }
 
 @media only screen and (min-width:884px) {
@@ -267,10 +289,6 @@ footer a {
         display: inline;
     }
 
-    .box {
-        margin: 0.5em;
-    }
-
     .column {
         display: contents;
     }
@@ -279,4 +297,12 @@ footer a {
         text-decoration: none;
         color: #fafafa;
     }
+}
+
+@media only screen and (min-width:1031px) {
+
+    .box {
+        width: 20%;
+    }
+
 }
