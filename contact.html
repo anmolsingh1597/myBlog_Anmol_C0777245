@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/content.css">
+    <title>Blog</title>
+    <script src="https://kit.fontawesome.com/92fa2537c2.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/0.2.0/Chart.min.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="full-page">
+    <div class="nav-class">
+    <header class="container">
+        <h1 class="heading">My <span>Portfolio</span></h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</div>
+        <main>
+            <h2 class="text-contact">Ready to get started? Contact us today.</h2>
+            <p class="text-contact">We are located at: <br>
+            25763 Bloom Street. <br>
+            Brampton.</p>
+
+            <p class="text-contact">Phone Number <br>
+                <!-- Span is a inline element and div is block element -->
+                <a class="mobile text-contact" href="tel:4166664181">(416) 666-4181</a><span class="tablet">(416) 666-4181</span>
+            </p>
+            <p class="text-contact">Email Address <br>
+                <a class="text-contact" href="mailto:fitnessclub@club.net">fitnessclub@club.net</a>
+            </p>
+            <br> <br>
+        </main>
+
+        <div class="tablet map">
+            <canvas id="contacts" width="400" height="400"></canvas>
+    <script>
+        var chartData = [
+            {
+                value: 30,
+                color:"#878BB6"
+            },
+            {
+                value : 40,
+                color : "#4ACAB4"
+            },
+            {
+                value : 20,
+                color : "#FF8153"
+            },
+            {
+                value : 10,
+                color : "#FFEA88"
+            }
+        ];
+        // Get the context of the canvas element we want to select
+        var contacts= document.getElementById("contacts").getContext("2d");
+        // new Chart(countries).Pie(pieData);
+        new Chart(contacts).Doughnut(chartData)
+    </script>
+        </div>
+    
+    <footer>
+        &copy;copyright 2020. All Rights Reserved. <br> 
+        <a href="mailto:anmolsingh1597@gmail.com">anmolsingh</a>
+    </footer>
+</div>
+</body>
+</html>

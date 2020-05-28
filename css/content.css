@@ -18,6 +18,10 @@ body {
     font-family: 'Raleway' , sans-serif;
 }
 
+main {
+    background-color: #ff5722;
+}
+
 .nav-class {
     text-align: center;
 }
@@ -154,6 +158,16 @@ footer a {
     color: #2a2a2a;
 }
 
+.text-contact {
+    line-height: 1.5625em;
+    font-size: 0.938em;
+    color: #fff;
+    margin: 0.938em;
+    letter-spacing: 0.0625em;
+    text-align: left;
+    text-decoration: none;
+}
+
 @media only screen and (min-width:688px) {
     .row {
         display: flex;
@@ -241,6 +255,15 @@ footer a {
     nav li {
         width: 10%;
     }
+
+    main {
+        background-color: transparent;
+    }
+
+    .text-contact {
+        color: #444;
+    }
+    
 
     p.text {
        padding: 2.5em;
