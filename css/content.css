@@ -18,6 +18,10 @@ body {
     font-family: 'Raleway' , sans-serif;
 }
 
+a {
+    text-decoration: none;
+}
+
 main {
     background-color: #ff5722;
 }
@@ -175,7 +179,7 @@ footer a {
 
     #full-page {
         text-align: none;
-}
+    }
 
     .column {
         display: contents;
@@ -200,6 +204,45 @@ footer a {
         padding-top: 1em;
     }
 
+    aside {
+        float: right;
+    }
+
+    .yellow-box {
+        margin: 1em;
+        width: 1em;
+        height: 1em;
+        background-color: #FFEA88;
+    }
+    .purple-box {
+        margin: 1em;
+        width: 1em;
+        height: 1em;
+        background-color: #878BB6;
+    }
+    .green-box {
+        margin: 1em;
+        width: 1em;
+        height: 1em;
+        background-color: #4ACAB4;
+    }
+    .orange-box {
+        margin: 1em;
+        width: 1em;
+        height: 1em;
+        background-color: #FF8153;
+    }
+
+    .label { 
+        font-size: 0.938em;
+        color: #444;
+        margin-top: 0.938em;
+        margin-right: 0.938em;
+        letter-spacing: 0.0625em;
+        text-align: left;
+        padding-left: 2em;    
+    }
+
     .box-gray {
     margin-top: 0.5em;
     width: 50%;
@@ -218,8 +261,8 @@ footer a {
         overflow: hidden;
         }
 
-    .map {
-       
+    .chart {
+       display: inline-block;
     }
     .mobile {
         display: none;
