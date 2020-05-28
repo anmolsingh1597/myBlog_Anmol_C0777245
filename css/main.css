@@ -207,6 +207,15 @@ p.text {
     text-align: left;
 }
 
+h4 {
+    color: #666;
+    margin: 0.938em;
+    letter-spacing: 0.0625em;
+    text-align: left;
+    line-height: 1.5625em;
+    font-size: 0.938em;
+}
+
 footer {
     background-color: transparent;
     font-size: .7em;
