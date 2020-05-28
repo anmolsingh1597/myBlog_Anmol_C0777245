@@ -82,7 +82,7 @@ nav li a{
 
 .box-gray {
     /* width: 50%; */
-    height: 7em;
+    height: 12em;
     background: #444;
     position: relative;
     overflow: hidden;
@@ -90,14 +90,14 @@ nav li a{
 
 .box-orange {
     /* width: 50%; */
-    height: 7em;
+    height: 12em;
     background: #ff5722;
     position: relative;
     overflow: hidden;
 }
 
 
-p.text-orange {
+.text-orange {
     line-height: 1.5625em;
     font-size: 0.938em;
     color: #ff5722;
@@ -107,7 +107,7 @@ p.text-orange {
     text-align: left;
 }
 
-p.text-gray {
+.text-gray {
     line-height: 1.5625em;
     font-size: 0.938em;
     color: #444;
@@ -116,6 +116,30 @@ p.text-gray {
     letter-spacing: 0.0625em;
     text-align: right;
 }
+
+.secondary{ 
+    display: none;
+  }
+  .education-hover:hover .secondary{
+    display : block;
+  }
+  .education-hover:hover .primary{
+    display : none;
+  }
+
+  .projects-hover:hover .secondary{
+    display : block;
+  }
+  .projects-hover:hover .primary{
+    display : none;
+  }
+
+  .skills-hover:hover .secondary{
+    display : block;
+  }
+  .skills-hover:hover .primary{
+    display : none;
+  }
 
 footer {
     background-color: transparent;
@@ -165,7 +189,7 @@ footer a {
     .box-gray {
     margin-top: 0.5em;
     width: 50%;
-    height: 7em;
+    height: 12em;
     background: #444;
     position: relative;
     overflow: hidden;
@@ -174,7 +198,7 @@ footer a {
     .box-orange {
         margin-top: 0.5em;
         width: 50%;
-        height: 7em;
+        height: 12em;
         background: #ff5722;
         position: relative;
         overflow: hidden;
