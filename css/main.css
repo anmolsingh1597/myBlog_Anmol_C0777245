@@ -82,7 +82,10 @@ nav li a{
     height: auto;
     background: #444;
     position: relative;
-    overflow: hidden;
+    overflow: auto;
+    max-width: 25%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .box img {

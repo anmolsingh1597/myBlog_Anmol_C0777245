@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/navigation.css">
+
     <title>Blog</title>
     <script src="https://kit.fontawesome.com/92fa2537c2.js"></script>
 </head>
@@ -14,13 +16,27 @@
         <h1 class="heading">My <span>Portfolio</span></h1>
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+ <!-- -------------------------------------------- Navigation bar -------------------------------------------- -->
+ <div class="topnav" id="myTopnav">
+    <a href="index.html" class="active">Home</a>
+    <a href="login.html">Login</a>
+    <a href="contact.html">Contact</a>
+    <div class="dropdown">
+      <button class="dropbtn">Services 
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="carbooking.html">Car Booking</a>
+        <a href="hotelbooking.html">Hotel Booking</a>
+        <a href="tickets.html">Tickets</a>
+        <a href="Services.html">Services</a>
+      </div>
+    </div> 
+    <a href="about.html">About</a>
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+  </div>
+  <script src="script/navigation.js"></script>
+<!-- -------------------------------------------- Navigation bar -------------------------------------------- -->
 </div>
         <div class="row">
             <div class="column">
