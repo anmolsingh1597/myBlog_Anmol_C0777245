@@ -172,6 +172,7 @@ footer a {
     text-decoration: none;
 }
 
+
 @media only screen and (min-width:688px) {
     .row {
         display: flex;
@@ -301,6 +302,13 @@ footer a {
 
     main {
         background-color: transparent;
+        display: inline-block;
+        margin-bottom: 9em;
+    }
+
+    .chart {
+        float: right;
+        display: inherit;
     }
 
     .text-contact {
